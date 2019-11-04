@@ -1,0 +1,5 @@
+syntax: glob
+images/*
+out/*
+temp/*
+*.asv
