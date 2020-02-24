@@ -100,7 +100,7 @@ label_st.vess_diam_um = 'Vessel Diam. (um)';
 % % label_st.end_vess_diam_um = 'End Vess. Diam. (um)';
 
 if ismember('bg_harv',avg_tbl.Properties.VariableNames);
-    label_st.A1C='HbA1c (%)';
+    label_st.bg_harv='HbA1c (%)';
 end
 if ismember('wgt_harv',avg_tbl.Properties.VariableNames);
     label_st.wgt_harv='Weight (g)';
@@ -147,24 +147,22 @@ if ismember('bg_harv',avg_tbl.Properties.VariableNames)
     corr_vars = {'frac_active_ibc','frac_trans_ibc','ov_proc','all_ov_proc'};
     for n = 1:numel(corr_vars)
         % Plot correlation between BG and active IBCs
-        plot(avg_tbl.A1C, avg_tbl.(corr_vars{n}),'k.','MarkerSize',5);hold on;
+        plot(avg_tbl.bg_harv, avg_tbl.(corr_vars{n}),'k.','MarkerSize',5);hold on;
         % Calculate Pearson Correlation
-        [rho,pval] = corr(avg_tbl.A1C, avg_tbl.(corr_vars{n}));
+        [rho,pval] = corr(avg_tbl.bg_harv, avg_tbl.(corr_vars{n}));
         fprintf([corr_vars{n} ': R=%.2f, p=%.1e\n'],rho,pval)
         % Calculate best fit line
-        coeffs = polyfit(avg_tbl.A1C, avg_tbl.(corr_vars{n}), 1);
+        coeffs = polyfit(avg_tbl.bg_harv, avg_tbl.(corr_vars{n}), 1);
         % Get fitted values
-        fittedX = linspace(min(avg_tbl.A1C), max(avg_tbl.A1C), 200);
         fittedY = polyval(coeffs, fittedX);
         % Plot the fitted line
         plot(fittedX, fittedY, '-', 'LineWidth', 0.75,'Color', [.5 .5 .5]);
-        ya = ylim; 
-        plot(([601 601] + 46.7)/28.7,ylim,'--','Color', [.5 .5 .5]);
+        ya = ylim; plot([601 601],ylim,'--','Color', [.5 .5 .5]);
         hold off
         % Formatting
         ylabel([strtrim(label_st.(corr_vars{n})) '   '])
 %         keyboard
-        xlabel('HbA1c (%)')
+        xlabel('Blood Glucose (mg/dL)')
         beautifyAxis(gca);
         set(gca, 'FontSize', 7.5);
         set([get(gca,'XLabel'), get(gca,'YLabel')], 'FontSize', 8.2);

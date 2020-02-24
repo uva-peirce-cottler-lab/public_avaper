@@ -56,14 +56,6 @@ raw_tbl.all_cell_p_mm_vl = raw_tbl.all_cell./raw_data(ix,16);
 raw_tbl.vld_mmpmm2 = (raw_tbl.vessel_len_um/1000) ./ (raw_tbl.fov_um ./1000).^2;
 raw_tbl.vess_nseg_pmm = raw_tbl.vess_nseg./ (raw_tbl.vessel_len_um/1000);
 raw_tbl.bp_count_pmm = raw_tbl.bp_count./ (raw_tbl.vessel_len_um/1000);
-
-% Add A1C if there is blood glucose.
-raw_tbl.Properties.VariableNames
-if ~isempty(intersect(raw_tbl.Properties.VariableNames, 'bg_harv'))
-    % A1C = (eAG + 46.7)/28.7
-   raw_tbl.A1C = (raw_tbl.bg_harv + 46.7)/28.7;
-end
-% keyboard
 % raw_tbl.vess_rad_um = raw_tbl.vess_rad_pix .* raw_tbl.umppix;
 % raw_tbl.end_seg_rad_um = raw_tbl.end_seg_rad_pix .* raw_tbl.umppix;
 
