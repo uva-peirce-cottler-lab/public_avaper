@@ -1,7 +1,7 @@
 clear all
 clc
 
-PROCESS_XMLS=1;
+PROCESS_XMLS=0;
 BACKUP_DATA=0;
 
 % Get input and output directories

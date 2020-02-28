@@ -100,7 +100,7 @@ label_st.vess_diam_um = 'Vessel Diam. (um)';
 % % label_st.end_vess_diam_um = 'End Vess. Diam. (um)';
 
 if ismember('bg_harv',avg_tbl.Properties.VariableNames);
-    label_st.bg_harv='HbA1c (%)';
+    label_st.bg_harv='Blood Glucose (mg/dL)';
 end
 if ismember('wgt_harv',avg_tbl.Properties.VariableNames);
     label_st.wgt_harv='Weight (g)';
@@ -154,6 +154,7 @@ if ismember('bg_harv',avg_tbl.Properties.VariableNames)
         % Calculate best fit line
         coeffs = polyfit(avg_tbl.bg_harv, avg_tbl.(corr_vars{n}), 1);
         % Get fitted values
+        fittedX = linspace(0,700,100);
         fittedY = polyval(coeffs, fittedX);
         % Plot the fitted line
         plot(fittedX, fittedY, '-', 'LineWidth', 0.75,'Color', [.5 .5 .5]);

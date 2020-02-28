@@ -151,7 +151,7 @@ for n = 1:numel(sorted_xmls_names)
 
        % Measure segment radii and record diameter
         [all_seg_rads, index_tbl] = measure_segment_rad(rcind_seg_cell,...
-            BW2, fliplr(st.derivedPic.endpoints));
+            st.derivedPic.BW_2, fliplr(st.derivedPic.endpoints));
        all_seg_diams = 2.*all_seg_rads+1;
        vess_diam_um(n,1) = mean(all_seg_diams) .* (fov_um(n,1) ./ st.imageSize(1));
        end_vess_diam_um(n,1) = mean(all_seg_diams(index_tbl.end_seg_idx)) .*...
