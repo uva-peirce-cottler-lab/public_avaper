@@ -23,12 +23,13 @@ p1 <- ggplot(data=diam_df,aes(x=group, y = mean_diam_um)) +
   geom_errorbar(data = diam_mean_df, aes(x = group,ymin = mean - sd, ymax = mean + sd),
                 inherit.aes = FALSE,width = 0.5)+
   theme_classic(base_size=8) + theme(legend.position="none") +
+  scale_x_discrete(limits = rev(levels(diam_df$group))) +
   xlab("") + ylab("Mean Diameter (um)") #+ coord_cartesian(ylim=c(0,20))
 print(p1)
 
 save_plot("Three groups.tiff",
            p1, ncol = 1, nrow = 1, base_asp = 3, dpi = 600,  
-           base_height = 1.5, base_width =3)
+           base_height = 2, base_width =2)
 
 
 diam_df2 <-diam_df;
@@ -48,12 +49,13 @@ p2 <- ggplot(data=diam_df2,aes(x=group, y = mean_diam_um)) +
   geom_errorbar(data = diam_mean_df2, aes(x = group,ymin = mean - sd, ymax = mean + sd),
                 inherit.aes = FALSE,width = 0.5)+
   theme_classic(base_size=8) + theme(legend.position="none") +
+  scale_x_discrete(limits = rev(levels(diam_df2$group))) + 
   xlab("") + ylab("Mean Diameter (um)") #+ coord_cartesian(ylim=c(0,20))
 print(p2)
 
 save_plot("Two groups.tiff",
           p2, ncol = 1, nrow = 1, base_asp = 3, dpi = 600,  
-          base_height = 1.5, base_width =3)
+          base_height = 2, base_width =2)
 
 
   

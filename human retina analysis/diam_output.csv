@@ -24,14 +24,14 @@ MAX_col_track5_vessel.txt,8.764743,Vessel
 MAX_col_track6_ac_no_lumen.txt,3.144739,AC Lumen(-)
 MAX_col_track6_ac_no_lumen2.txt,1.804547,AC Lumen(-)
 MAX_col_track6_vessel.txt,8.714728,Vessel
-MAX_deep_proc_ac_lumen.txt,2.868097,AC Lumen(+)
-MAX_deep_proc_ac_lumen2.txt,2.972626,AC Lumen(+)
-MAX_deep_proc_vessel.txt,5.61879,Vessel
-MAX_deep_proc2_ac_lumen.txt,4.334178,AC Lumen(+)
-MAX_deep_proc2_ac_no_lumen.txt,2.292108,AC Lumen(-)
-MAX_deep_proc2_ac_no_lumen2.txt,2.21719,AC Lumen(-)
-MAX_deep_proc2_ac_vessel.txt,4.55033,Vessel
-cd31 wired_ac_lumen.txt,5.636391,AC Lumen(+)
+MAX_deep_proc_ac_lumen.txt,6.331397,AC Lumen(+)
+MAX_deep_proc_ac_lumen2.txt,6.414956,AC Lumen(+)
+MAX_deep_proc_vessel.txt,13.18328,Vessel
+MAX_deep_proc2_ac_lumen.txt,9.568826,AC Lumen(+)
+MAX_deep_proc2_ac_no_lumen.txt,3.629961,AC Lumen(-)
+MAX_deep_proc2_ac_no_lumen2.txt,4.24742,AC Lumen(-)
+MAX_deep_proc2_vessel.txt,10.77209,Vessel
+cd31 wired_ac_lumen.txt,6.139544,AC Lumen(+)
 cd31 wired_vessel.txt,8.553888,Vessel
 col_track2_ac_no_lumen.txt,3.328495,AC Lumen(-)
 col_track2_vessel.txt,9.103218,Vessel
