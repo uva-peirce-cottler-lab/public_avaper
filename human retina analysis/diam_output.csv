@@ -1,0 +1,37 @@
+name,mean_diam_um,group
+IBC2_ac_no_lumen.txt,3.614756,AC Lumen(-)
+IBC2_ac_no_lumen2.txt,4.285674,AC Lumen(-)
+IBC2_vessel.txt,9.815178,Vessel
+MAX_IBC4_60x_ac_no_lumen.txt,5.466074,AC Lumen(-)
+MAX_IBC4_60x_vessel.txt,8.030596,Vessel
+MAX_IBC_0_ac_lumen.txt,6.266598,AC Lumen(+)
+MAX_IBC_0_ac_lumen2.txt,6.595559,AC Lumen(+)
+MAX_IBC_0_ac_no_lumen.txt,4.238605,AC Lumen(-)
+MAX_IBC_0_vessel.txt,10.76113,Vessel
+MAX_IBC_60x_3_ac_no_lumen.txt,3.248765,AC Lumen(-)
+MAX_IBC_60x_3_vessel.txt,8.978252,Vessel
+MAX_col_track_ac_no_lumen.txt,2.200055,AC Lumen(-)
+MAX_col_track_vessel.txt,9.249544,Vessel
+MAX_col_track3_ac_no_lumen.txt,3.452492,AC Lumen(-)
+MAX_col_track3_vessel.txt,9.851699,Vessel
+MAX_col_track4_ac_lumen.txt,6.667305,AC Lumen(+)
+MAX_col_track4_ac_no_lumen.txt,2.579892,AC Lumen(-)
+MAX_col_track4_ac_no_lumen2.txt,2.805972,AC Lumen(-)
+MAX_col_track4_vessel.txt,8.337635,Vessel
+MAX_col_track5_ac_no_lumen.txt,2.069072,AC Lumen(-)
+MAX_col_track5_ac_no_lumen2.txt,1.260473,AC Lumen(-)
+MAX_col_track5_vessel.txt,8.764743,Vessel
+MAX_col_track6_ac_no_lumen.txt,3.144739,AC Lumen(-)
+MAX_col_track6_ac_no_lumen2.txt,1.804547,AC Lumen(-)
+MAX_col_track6_vessel.txt,8.714728,Vessel
+MAX_deep_proc_ac_lumen.txt,2.868097,AC Lumen(+)
+MAX_deep_proc_ac_lumen2.txt,2.972626,AC Lumen(+)
+MAX_deep_proc_vessel.txt,5.61879,Vessel
+MAX_deep_proc2_ac_lumen.txt,4.334178,AC Lumen(+)
+MAX_deep_proc2_ac_no_lumen.txt,2.292108,AC Lumen(-)
+MAX_deep_proc2_ac_no_lumen2.txt,2.21719,AC Lumen(-)
+MAX_deep_proc2_ac_vessel.txt,4.55033,Vessel
+cd31 wired_ac_lumen.txt,5.636391,AC Lumen(+)
+cd31 wired_vessel.txt,8.553888,Vessel
+col_track2_ac_no_lumen.txt,3.328495,AC Lumen(-)
+col_track2_vessel.txt,9.103218,Vessel
